@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+body{
+  font-family: "Inter", sans-serif;
+}
+
+.step.completed {
+  background-color: #d1e7dd; /* Green background to represent completed step */
+  border-color: #198754; /* Green border */
+}
+
+.step.upcoming {
+  background-color: #f8d7da; /* Light red for upcoming steps */
+  border-color: #dc3545; /* Red border */
+}
