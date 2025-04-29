@@ -77,6 +77,18 @@ export const menuData = [
     //   ],
   },
   {
+    name: "StepCounter",
+    path: "/dad",
+    icon: ListOrdered ,
+    iconColor:'text-teal-500',
+
+    // submenu: [
+    //     { name: "Orders List", path: "/order/list" },
+    //     { name: "Paid Orders", path: "/order/paid" },
+    //     { name: "Unpaid Orders", path: "/order/unpaid" },
+    //   ],
+  },
+  {
     name: "Tables",
     path: "/table",
     icon: Table,
