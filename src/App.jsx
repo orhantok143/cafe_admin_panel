@@ -70,6 +70,7 @@ const App = () => {
           <Route path="/table/list" element={<TableList />} />
           <Route path="/table/add" element={<AddTable />} />
         </Route>
+        
         <Route path="/profile" element={<AdminProfile />} />
         <Route path="/profile/change-password" element={<ChangePassword />} />
         <Route path="/profile/setting" element={<SittingPage />} />
