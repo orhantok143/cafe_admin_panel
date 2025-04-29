@@ -30,6 +30,7 @@ import CategoryList from "./components/category/CategoryList";
 import TableList from "./components/table/TableList";
 import PersonalList from "./components/personal/PersonList";
 import OrderList from "./components/order/OrderList";
+import StepCounter from "./utilis/StepCounter ";
 
 const App = () => {
 
@@ -39,7 +40,7 @@ const App = () => {
     <ScrollToTop /> {/* Sayfa değişikliklerinde üst kısmına kaydırma */}
 
       <Routes>
-
+        <Route path="/dad" element={<StepCounter />} />
         <Route path="/auth" element={<Auth/>} >
           <Route path="/auth/login" element={<LoginPage />} />
           <Route path="/auth/register" element={<RegisterPage />} />
@@ -47,8 +48,8 @@ const App = () => {
 
         <Route path="/" element={<MainLayout />}>
           <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/reports/sales" element={<ReportPage />} />
           <Route path="/reports/expense" element={<ExpensePage />} />
+          <Route path="/reports/sales" element={<ReportPage />} />
           <Route path="/reports/current-accounts" element={<CariPage />} />
           <Route path="/product/list" element={<ProductList />} />
           <Route path="/product/add" element={<AddProduct />} />
